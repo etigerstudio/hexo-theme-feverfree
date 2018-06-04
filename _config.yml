@@ -19,9 +19,9 @@ url:
 footer:
     text: |
         © 2017-18
-        <br><a href="https://github.com/etigerstudio/hexo-theme-feverfree" target="_blank">feverfree</a> 渲染
-        <br>源自 <a href="https://github.com/viosey/hexo-theme-material" target="_blank">Material</a>
-        <br><a href="https://hexo.io" target="_blank">Hexo</a> 强劲输出
+        <br>Themed by <a href="https://github.com/etigerstudio/hexo-theme-feverfree" target="_blank">feverfree</a>
+        <br>Forked from <a href="https://github.com/viosey/hexo-theme-material" target="_blank">Material</a>
+        <br>Powered by <a href="https://hexo.io" target="_blank">Hexo</a>
 
 # ---------------------------------------------------------------
 # Style Settings
