@@ -1909,9 +1909,27 @@ pre .javascript .function {
 @media screen and (max-width: 1183px) {
     #scheme-Isolation .header-sns_list {
         margin-top: 0;
-        padding-top: 24px;
-        border-top: 1px solid #c7ced1;
+        padding-top: 16px;
+        border: none;
         margin-bottom: 16px;
+        padding-left: 16px;
+    }
+}
+#scheme-Isolation .header-block {
+    display: block;
+}
+@media screen and (max-width: 1183px) {
+    #scheme-Isolation .header-block {
+        display: none;
+    }
+}
+#scheme-Isolation .footer-block {
+    display: none;
+    margin: 0 auto;
+}
+@media screen and (max-width: 1183px) {
+    #scheme-Isolation .footer-block {
+        display: block;
     }
 }
 #scheme-Isolation .header-sns_list a {
