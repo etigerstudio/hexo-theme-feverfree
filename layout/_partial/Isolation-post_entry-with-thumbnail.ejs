@@ -1,0 +1,18 @@
+<!-- Custom Thumbnail -->
+    <!-- <div class="post_thumbnail-custom mdl-card__media lazy" data-original="<%= post.thumbnail %>"> -->
+<div class="post_thumbnail-custom mdl-card__media" style="background-image: url(<%= post.thumbnail %>)"> 
+
+
+    <!-- </div> -->
+
+    <!-- Post_entry Content -->
+    <div class="post_entry-content" style="background-color: rgba(0,0,0,0.1);">
+        <!-- Post Title -->
+        <p class="post_entry-title-white">
+            <a href="<%= url_for(post.path) %>"><% if(pin) { %><span>[Top]</span><% } %><%= post.title %></a>
+        </p>
+    </div>
+</div>
+<div class="post_entry-content mdl-color-text--grey-600 mdl-card__supporting-text">
+    <%- partial('_partial/Isolation-post_entry-excerpt')  %>
+</div>

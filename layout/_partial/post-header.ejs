@@ -1,0 +1,35 @@
+<% if(theme.scheme === 'Paradox') { %>
+    <!-- Paradox Post Header -->
+    <% if(!page.thumbnail) { %>
+        <% if(!theme.thumbnail.purecolor) {%>
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <%- partial('_partial/Paradox-post-thumbnail') %>
+        <% } else { %>
+            <!-- Pure Thumbnail -->
+            <div class="post_thumbnail-pure mdl-card__media mdl-color-text--grey-50" style="background-color:<%= theme.thumbnail.purecolor %> !important">
+        <% } %>
+    <% }else{ %>
+        <!-- Custom Thumbnail -->
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(<%- page.thumbnail %>)">
+    <% } %>
+            <p class="article-headline-p">
+                <%- page.title %>
+            </p>
+        </div>
+<% } %>
+
+<% if(theme.scheme === 'Isolation') { %>
+    <!-- Isolation Post Header -->
+    <!-- Post thumbnail -->
+    <% if(!page.thumbnail) { %>
+
+        <!-- Null Thumbnail -->
+        <div class="post_thumbnail-null">
+    <% } else { %>
+        <!-- Custom thumbnail -->
+        <div class="post_thumbnail-custom" post>
+            <img src="<%= page.thumbnail %>">
+    <% } %>
+        </div>
+<% } %>

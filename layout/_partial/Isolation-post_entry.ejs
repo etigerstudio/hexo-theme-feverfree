@@ -1,0 +1,37 @@
+<div class="post_entry-module mdl-card <% if(theme.card_elevation) { %><%= 'mdl-shadow--' + theme.card_elevation + 'dp' %><% } %> mdl-cell mdl-cell--12-col fade out">
+  <!-- Post_entry Header -->
+  <% if(!post.thumbnail) { %>
+      <%- partial('_partial/Isolation-post_entry-without-thumbnail')  %>
+      <% } else { %>
+<%- partial('_partial/Isolation-post_entry-with-thumbnail')  %>
+       <% } %>
+
+        <!-- Post_entry Footer -->
+        <div class="post_entry-footer">
+          <div class="post_entry-footer-border"></div>
+          <div class="post_entry-footer-info">
+            <div class="post_entry-footer-date">
+              <%= date(post.date, 'YYYY.M.D') %>
+            </div>
+            <!-- Post Tags -->
+            <%- list_tags(post.tags, {
+              show_count: false,
+              class: 'post_entry-tags',
+              style: 'list',
+              separator: ''
+            }) %>
+            <div class="post_entry-footer-comment">
+              <% if(theme.comment.use === 'duoshuo') { %>
+                <!-- Comment Number -->
+                <span class="ds-thread-count" data-thread-key="<% theme.comment.duoshuo_thread_key_type === 'id' ? page.id : page.path %>" data-count-type="comments"></span>
+                <% } %>
+                <% if(theme.comment.use === 'changyan') { %>
+                  <!-- Comment Number -->
+                  <span class="post_entry-comment" >
+                    <span id = "sourceId::<%= theme.comment.changyan_thread_key_type === 'id' ? page.id : page.path  %>" class = "cy_cmt_count" ></span>条评论
+                  </span>
+                  <% } %>
+                </div>
+              </div>
+            </div>
+          </div>

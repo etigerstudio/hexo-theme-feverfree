@@ -1,0 +1,13 @@
+<!-- Post Excerpt -->
+<p class="post_entry-excerpt">
+  <%if(post.excerpt) {%>
+    <%- strip_html(post.excerpt) %>
+    <%}else{%>
+      <%- strip_html(truncate(post.content,{length: theme.reading.entry_excerpt })) %>
+      <%}%>
+      <!-- &nbsp;&nbsp;&nbsp; -->
+
+      <span>
+        <a href="<%= url_for(post.path) %>" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;<i class="material-icons material-icon-next" role="button">arrow_forward</i></a>
+      </span>
+    </p>

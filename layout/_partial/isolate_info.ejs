@@ -1,0 +1,45 @@
+<header class="header">
+    <div class="header-wrapper">
+        <!-- Header Copyright -->
+        <div class="header-copyright-left">
+            <%- partial('_partial/isolate_info-copyright') %>
+        </div>
+
+        <!-- Header Title -->
+        <span class="header-title header-item">
+            <a href="<%= config.root %>" title="<%= config.title %>">
+                <!-- <%= config.title %> -->
+                <% if(theme.materialcdn.use === true) { %>
+                    <img src="<%= theme.materialcdn.base + theme.img.logo %>" class="avatar-img" width="195px" height="42px" alt="feverfree">
+                <%}else{%>
+                    <img src="<%= theme.img.logo %>" class="avatar-img" width="195px" height="42px" alt="feverfree">
+                <%}%>
+            </a>
+        </span>
+
+        <p class="header-slogan header-item">
+            <%- theme.uiux.slogan %>
+        </p>
+
+        <!-- Header Nav -->
+        <nav class="header-nav header-item">
+            <span class="header-nav-item">
+                <a href="<%= config.root %>" title="Home">
+                    <span><%= __('misc.home') %></span>
+                </a>
+            </span>
+
+          <!-- Independent Pages -->
+          <% for (var i in theme.pages) { %>
+              <span class="header-nav-item">
+                  <a href="<%= theme.pages[i] || '#' %>" title="<%= i %>">
+                      <span><%= i %></span>
+                  </a>
+              </span>
+          <% } %>
+        </nav>
+
+        <!-- Header SNS -->
+        <%- partial('_partial/isolate-sns_list') %>
+    </div>
+</header>

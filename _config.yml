@@ -1,0 +1,207 @@
+# ---------------------------------------------------------------
+# Site Information Settings
+# ---------------------------------------------------------------
+
+# Head info
+head:
+    favicon: "/img/favicon.png"
+    high_res_favicon: "/img/favicon.png"
+    apple_touch_icon: "/img/ios-icon.png"
+    keywords:
+
+# Jump Links Settings
+url:
+    rss:
+    daily_pic: "#"
+    logo: "#"
+
+# Footer info
+footer:
+    text: |
+        © E-Tiger Studio 2017-18 <br>
+        <a href="https://github.com/etigerstudio/hexo-theme-feverfree" target="_blank">feverfree</a> 主题
+        <br>
+        <a href="https://hexo.io" target="_blank">Hexo</a> 强劲输出
+
+# ---------------------------------------------------------------
+# Style Settings
+# ---------------------------------------------------------------
+
+# Schemes
+scheme: Isolation
+#scheme: Isolation
+
+# UI & UX: slogan, color, effect
+uiux:
+    slogan: |
+        But Would U Luv Me If I RULE <br />
+        the WORld, WORld, WORld
+    theme_color: "#29B6F6"
+    theme_sub_color: "#0091EA"
+    # hyperlink_color: "#29B6F6"
+    hyperlink_color: "#2196f3"
+    button_color: "#757575"
+    android_chrome_color: "#29B6F6"
+    nprogress_color: "#29d"
+    nprogress_buffer: "800"
+
+# JS Effect Switches
+js_effect:
+    fade: true
+    smoothscroll: false
+
+# Reading experience
+reading:
+    entry_excerpt: 80
+
+# Thumbnail Settings
+thumbnail:
+    purecolor:
+    random_amount: 19
+
+# Background Settings
+# bing available parameter:
+#     new | color= | type=
+#         color available value: black, blue, brown, green, multi, orange, pink, purple, red, white, yellow
+#         type available value: A (animal), C (culture), N (nature), S (space), T (travel)
+background:
+    purecolor: "#F5F5F5"
+    #bgimg: "/img/bg.png"
+    bing:
+        enable: false
+        parameter:
+
+# Images Settings
+img:
+    logo: "/img/logo.png"
+    avatar: "/img/avatar.png"
+    daily_pic: "/img/daily_pic.png"
+    sidebar_header: "/img/sidebar_header.png"
+    footerico: "/img/footer/footer_ico-"
+    random_thumbnail: "/img/random/material-"
+    footer_image:
+        #upyun_logo:
+            #link: "https://www.upyun.com/"
+            #src: "/img/upyun_logo.svg"
+
+# Custom Fonts
+fonts: "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",sans-serif"
+    # fonts: "\"SF UI Text\", \"PingFang SC\", -apple-system-body, BlinkMacSystemFont, Roboto, \"Helvetica Neue\", Helvetica, \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif"
+    # fonts: SF UI Text,Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif
+
+# Card Elevation Level
+card_elevation: 2
+
+
+# ---------------------------------------------------------------
+# Menu Settings
+# ---------------------------------------------------------------
+
+# SNS Menu
+sns:
+    email:
+    facebook:
+    twitter:
+    googleplus:
+    weibo:
+    instagram:
+    tumblr:
+    github: "https://github.com/etigerstudio"
+    linkedin:
+    zhihu:
+    bilibili:
+    telegram:
+
+# SNS Share Switch
+sns_share:
+    twitter: true
+    facebook: true
+    googleplus: true
+    weibo: true
+    linkedin: false
+    qq: false
+    telegram: false
+
+# Sidebar Customize
+sidebar:
+    dropdown:
+        Email Me:
+            link: "#"
+            icon: email
+    homepage:
+        use: true
+        icon: home
+        divider: false
+    archives:
+        use: true
+        icon: inbox
+        divider: false
+    categories:
+        use: false
+        icon: chrome_reader_mode
+        divider: false
+    pages:
+        #About:
+            #link: "/about"
+            #icon: person
+            #divider: false
+    article_num:
+        use: false
+        divider: false
+    footer:
+        divider: true
+        theme: true
+        support: false
+        feedback: false
+        material: false
+
+# Qrcode for redirect at other device
+qrcode: false
+
+# ---------------------------------------------------------------
+# Integrated Services
+# ---------------------------------------------------------------
+
+# MaterialCDN
+# When you set 'use' as true, the needed css, js, font file will have a new src.
+# The new src will have the base domain you configured in 'base'.
+materialcdn:
+    use: false
+    base: https://feverfree.oss-cn-beijing.aliyuncs.com/static
+
+# Comment Systems
+# Available value of "use":
+#     duoshuo | disqus | disqus_click | changyan
+comment:
+    use:
+    shortname:
+    duoshuo_thread_key_type: path
+    duoshuo_embed_js_url: "https://static.duoshuo.com/embed.js"
+    changyan_appid:
+    changyan_conf:
+    changyan_thread_key_type: path
+# Search Systems
+# Available value:
+#     swiftype | google | local
+search:
+    use: google
+    swiftype_key:
+
+# Analytics Systems
+analytics:
+    baidu_id:
+    google_id:
+
+# Leancloud Views
+leancloud:
+    enable: false
+    app_id: #你的 app_id
+    app_key: #你的 app_key
+    av_core_mini: "https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"
+
+# Busuanzi 不蒜子 Views
+busuanzi:
+    enable: false
+    all_site_uv: false
+    post_pv: false
+    busuanzi_pure_mini_js: "https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"

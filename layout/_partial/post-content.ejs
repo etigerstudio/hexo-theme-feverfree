@@ -1,0 +1,18 @@
+<div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out" <% if(page.thumbnail) { %> thumbnail <% } %> >
+    <% if(theme.scheme === 'Paradox') { %>
+        <%- page.content %>
+    <% } %>
+
+    <% if(theme.scheme === 'Isolation') { %>
+        <div class="post-content_wrapper">
+            <p class="post-title" <% if(page.thumbnail) { %> thumbnail <% } %> >
+                <%- page.title %>
+            </p>
+            <%- page.content %>
+            <% if(theme.scheme === 'Isolation') { %>
+                <!-- Paradox Post Info -->
+                <%- partial('_partial/Isolation-post-info') %>
+            <% } %>
+        </div>
+    <% } %>
+</div>
