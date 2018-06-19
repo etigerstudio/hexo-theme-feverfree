@@ -1,10 +1,5 @@
 <header class="header">
     <div class="header-wrapper">
-        <!-- Header Copyright -->
-        <div class="header-copyright-left">
-            <%- partial('_partial/isolate_info-copyright') %>
-        </div>
-
         <!-- Header Title -->
         <span class="header-title header-item">
             <a href="<%= config.root %>" title="<%= config.title %>">
@@ -42,6 +37,11 @@
         <!-- Header SNS -->
         <div class="header-block">
             <%- partial('_partial/isolate-sns_list') %>
+        </div>
+
+        <!-- Header Copyright -->
+        <div class="header-copyright-left">
+            <%- partial('_partial/isolate_info-copyright') %>
         </div>
     </div>
 </header>

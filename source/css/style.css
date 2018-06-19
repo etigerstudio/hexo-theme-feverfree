@@ -1783,18 +1783,17 @@ pre .javascript .function {
 }
 #scheme-Isolation .header-copyright-left {
     /*color: #a5b1b6;*/
+    clear: both;
     color: #7b878c;
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    padding-top: 16px;
     display: none;
 }
 @media screen and (min-width: 1183px) {
     #scheme-Isolation .header-copyright-left {
         display: block;
-        position: absolute;
-        font-size: 13px;
-        letter-spacing: 1px;
-        line-height: 20px;
-        margin: 0;
-        bottom: -50px;
     }
 }
 #scheme-Isolation .header-copyright-bottom {
