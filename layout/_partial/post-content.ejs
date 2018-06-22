@@ -8,6 +8,13 @@
             <p class="post-title" <% if(page.thumbnail) { %> thumbnail <% } %> >
                 <%- page.title %>
             </p>
+            <div class="post-toc-wrapper">
+                <%- toc(page.content, {
+                    class: 'post-toc',
+                    list_number: false,
+                    style: 'max-height:80vh; overflow-y:scroll;'
+                }) %>
+            </div>
             <%- page.content %>
             <% if(theme.scheme === 'Isolation') { %>
                 <!-- Paradox Post Info -->

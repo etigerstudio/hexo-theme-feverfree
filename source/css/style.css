@@ -1994,7 +1994,7 @@ pre .javascript .function {
 }
 @media screen and (min-width: 769px) {
     #scheme-Isolation #post-content {
-        padding: 48px;
+        padding: 36px;
     }
 }
 @media screen and (min-width: 1183px) {
@@ -2689,7 +2689,6 @@ pre .javascript .function {
     width: auto;
     word-wrap: normal;
     white-space: nowrap;
-    padding: 0;
     list-style: none;
     padding: 0 16px;
 }
@@ -2697,8 +2696,28 @@ pre .javascript .function {
     list-style: none;
 }
 .post-toc a {
-    color: #727272;
+    font-weight: 400;
+    color: #05347d;
+    font-size: 16px;
     text-decoration: none;
+}
+
+#scheme-Isolation .post-toc-wrapper {
+    border-top: 2px dashed #BBDEFB;
+    margin: 0 -80px 20px -80px;
+    padding: 10px 0 10px 50px;
+    background-color: rgba(227, 242, 253, 0.35);
+    border-bottom: 2px dashed #BBDEFB;
+}
+@media screen and (min-width: 769px) {
+    #scheme-Isolation .post-toc-wrapper {
+        margin: 0 -96px 20px -96px;
+    }
+}
+@media screen and (min-width: 1183px) {
+    #scheme-Isolation .post-toc-wrapper {
+        margin: 0 -80px 20px -80px;
+    }
 }
 .post-toc .post-toc-item {
     /*
