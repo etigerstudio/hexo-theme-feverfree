@@ -1,60 +1,13 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "hexo-material",
-        "scope": null,
-        "escapedName": "hexo-material",
-        "name": "hexo-material",
-        "rawSpec": "",
-        "spec": "latest",
-        "type": "tag"
-      },
-      "/Users/ALuier/Projects/feverfree"
-    ]
-  ],
-  "_cnpm_publish_time": 1491715496797,
-  "_from": "hexo-material@latest",
-  "_hasShrinkwrap": false,
-  "_id": "hexo-material@1.3.3",
-  "_inCache": true,
-  "_location": "/hexo-material",
-  "_nodeVersion": "7.3.0",
-  "_npmOperationalInternal": {
-    "host": "packages-18-east.internal.npmjs.com",
-    "tmp": "tmp/hexo-material-1.3.3.tgz_1491715494153_0.33934915508143604"
-  },
-  "_npmUser": {
-    "name": "viosey",
-    "email": "imviosey@gmail.com"
-  },
-  "_npmVersion": "3.10.10",
-  "_phantomChildren": {},
-  "_requested": {
-    "raw": "hexo-material",
-    "scope": null,
-    "escapedName": "hexo-material",
-    "name": "hexo-material",
-    "rawSpec": "",
-    "spec": "latest",
-    "type": "tag"
-  },
-  "_requiredBy": [
-    "#USER"
-  ],
-  "_resolved": "https://r.cnpmjs.org/hexo-material/download/hexo-material-1.3.3.tgz",
-  "_shasum": "0798b8ea6deb1b16f8c6d5a18b421390ee688b1a",
-  "_shrinkwrap": null,
-  "_spec": "hexo-material",
-  "_where": "/Users/ALuier/Projects/feverfree",
   "author": {
-    "name": "Viosey"
+    "name": "E-Tiger Studio",
+    "email": "etigerstudio@gmail.com",
+    "url": "https://etiger.studio"
   },
   "bugs": {
-    "url": "https://github.com/viosey/hexo-theme-material/issues"
+    "url": "https://github.com/etigerstudio/hexo-theme-feverfree/issues"
   },
-  "dependencies": {},
-  "description": "Material Design Theme for Hexo",
+  "description": "All fevers are due to be freed. Sweet Hexo theme feverfree.",
   "devDependencies": {
     "ejs-lint": "^0.2.0",
     "eslint": "^3.14.0",
@@ -62,39 +15,22 @@
     "eslint-plugin-import": "^2.2.0",
     "sass-lint": "^1.10.2"
   },
-  "directories": {},
-  "dist": {
-    "shasum": "0798b8ea6deb1b16f8c6d5a18b421390ee688b1a",
-    "size": 3944311,
-    "noattachment": false,
-    "tarball": "https://r.cnpmjs.org/hexo-material/download/hexo-material-1.3.3.tgz"
-  },
-  "gitHead": "23d59f0c513e2b40074e07b436b0f549e39029f8",
-  "homepage": "https://github.com/viosey/hexo-theme-material#readme",
+  "homepage": "https://github.com/etigerstudio/hexo-theme-feverfree",
   "keywords": [
     "hexo",
     "theme",
-    "material"
+    "feverfree"
   ],
   "license": "GPL-3.0",
-  "maintainers": [
-    {
-      "name": "viosey",
-      "email": "imviosey@gmail.com"
-    }
-  ],
-  "name": "hexo-material",
-  "optionalDependencies": {},
-  "publish_time": 1491715496797,
-  "readme": "ERROR: No README data found!",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/viosey/hexo-theme-material.git"
-  },
+  "name": "hexo-theme-feverfree",
   "scripts": {
     "lint": "npm run setup && bash lint.sh",
     "setup": "npm cache clean && npm install",
     "test": "echo \"Error: no test specified\""
   },
-  "version": "1.3.3"
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/etigerstudio/hexo-theme-feverfree.git"
+  },
+  "version": "0.1.0"
 }
