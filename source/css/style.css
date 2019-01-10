@@ -2742,6 +2742,22 @@ pre .javascript .function {
     user-select: none;
 */
 }
+
+.post-toc-level-2 span.post-toc-text {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.post-toc-level-3 span.post-toc-text {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.post-toc-level-4 span.post-toc-text {
+    font-size: 15px;
+    font-weight: normal;
+}
+
 /*****************/
 /* Material_icon */
 /*****************/
